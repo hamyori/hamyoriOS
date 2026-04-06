@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="arch">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamyori | Dev Log</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
+<nav class="sidebar">
+    <div class="logo">System.sh</div>
+    <ul class="nav-links">
+        <li><a href="#" onclick="showSection('blog')" data-i18n="nav-blog">Blog</a></li>
+        <li><a href="#" onclick="showSection('projects')" data-i18n="nav-projects">Proyectos</a></li>
+        <li><a href="#" onclick="showSection('books')" data-i18n="nav-books">Biblioteca</a></li>
+        <li><a href="#" onclick="showSection('media')" data-i18n="nav-media">Media</a></li>
+    </ul>
+
+    <div class="selectors">
+        <select id="lang-selector" onchange="changeLang(this.value)">
+            <option value="es">ES</option>
+            <option value="en">EN</option>
+            <option value="zh">ZH</option>
+            <option value="ja">JA</option>
+        </select>
+
+        <select id="theme-selector" onchange="changeTheme(this.value)">
+            <option value="arch">Hyprland Dark</option>
+            <option value="kanon">Winter (Kanon)</option>
+            <option value="industrial">Welder (Orange)</option>
+            <option value="monochrome">Nvim (B&W)</option>
+        </select>
+    </div>
+</nav>
+
+<main id="app-container">
+    </main>
+
+<script src="js/content.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
